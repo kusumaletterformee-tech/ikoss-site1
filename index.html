@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Mining</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background: radial-gradient(circle at top, #1e2b4f, #050b1a);
+  color:#fff;
+}
+.container{max-width:1100px;margin:auto;padding:20px;}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius:16px;
+  padding:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  background:rgba(0,0,0,0.35);
+  border-radius:14px;
+  margin-bottom:20px;
+}
+.logo{font-weight:bold;font-size:18px;}
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin-left:15px;
+  font-size:14px;
+}
+
+.hero{text-align:center;margin-top:10px;}
+.hero img{width:90px;margin-bottom:10px;}
+.hero h1{font-size:26px;margin-bottom:10px;}
+.hero p{color:#ddd;font-size:14px;}
+
+.badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:15px 0;}
+.badge{
+  background:rgba(255,255,255,.15);
+  padding:8px 14px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.btns{margin-top:15px;}
+.btn{
+  border:none;
+  padding:12px 22px;
+  border-radius:12px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:5px;
+}
+.btn-red{background:#ff3b3b;color:#fff;}
+.btn-white{background:#fff;color:#000;}
+
+h2{margin:30px 0 15px;}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;}
+.stat-box{padding:15px;border-radius:14px;background:rgba(255,255,255,.1);}
+.stat-box h3{margin:0;font-size:18px;}
+.stat-box p{margin:5px 0 0;font-size:12px;color:#ccc;}
+
+.coins{display:flex;flex-wrap:wrap;gap:10px;}
+.coin{
+  background:rgba(255,255,255,.15);
+  padding:8px 14px;
+  border-radius:12px;
+  font-size:13px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+}
+th,td{padding:8px;border-bottom:1px solid rgba(255,255,255,.1);}
+th{text-align:left;color:#ccc;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">⚡ CloudMine</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Plan</a>
+    <a href="#">Login</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="card hero">
+  <img src="https://i.imgur.com/8Km9tLL.png">
+  <h1>TRON Cloud Mining Farm</h1>
+  <p>Raih Keuntungan +160% dari Investasi Anda</p>
+
+  <div class="badges">
+    <div class="badge">🎁 Bonus Referensi +20%</div>
+    <div class="badge">⚡ Dashboard Cepat</div>
+    <div class="badge">💰 Pembayaran TRX</div>
+  </div>
+
+  <div class="btns">
+    <button class="btn btn-red">MULAI</button>
+    <button class="btn btn-white"
+      onclick="document.getElementById('statistik').scrollIntoView({behavior:'smooth'})">
+      STATISTIK
+    </button>
+  </div>
+</div>
+
+<!-- STATISTIK -->
+<h2 id="statistik">📊 Statistik Platform</h2>
+<div class="stats">
+  <div class="stat-box">
+    <h3>38.468</h3>
+    <p>Jumlah Pengguna</p>
+  </div>
+  <div class="stat-box">
+    <h3>752.350 TRX</h3>
+    <p>Total Setoran</p>
+  </div>
+  <div class="stat-box">
+    <h3>27.348 TRX</h3>
+    <p>Total Penarikan</p>
+  </div>
+</div>
+
+<!-- METODE -->
+<h2>💳 Metode Deposit</h2>
+<div class="coins">
+  <div class="coin">TRX</div>
+  <div class="coin">TON</div>
+  <div class="coin">BTC</div>
+  <div class="coin">BNB</div>
+  <div class="coin">DOGE</div>
+  <div class="coin">XRP</div>
+</div>
+
+<!-- TRANSAKSI -->
+<h2>🧾 Transaksi Terbaru</h2>
+<div class="card">
+  <table>
+    <tr>
+      <th>Dompet</th>
+      <th>Jumlah</th>
+      <th>Waktu</th>
+    </tr>
+    <tr>
+      <td>TD1***ac</td>
+      <td>50 TRX</td>
+      <td>40 menit lalu</td>
+    </tr>
+    <tr>
+      <td>TPg***zZ</td>
+      <td>75 TRX</td>
+      <td>1 jam lalu</td>
+    </tr>
+    <tr>
+      <td>TRV***6j</td>
+      <td>10 TRX</td>
+      <td>1 jam lalu</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</body>
+</html>
